@@ -1,0 +1,73 @@
+.maain{
+    background-color:#2e2e2e;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+}
+.about-1{
+    margin: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.about-1 h1{
+    text-align: center;
+    color: aquamarine;
+    font-weight: bold;
+}
+.about-1 p{
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+}
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: url('hero-image.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-section {
+    text-align: center;
+    padding: 20px 5px;
+    margin-bottom: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+.about-section h2{
+    color:aquamarine; 
+}
+.about-item {
+    flex: 0 0 calc(50% - 10px); /* Adjust the width based on your design */
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .about-item {
+        flex: 0 0 calc(100% - 10px); /* Set to full width for smaller screens */
+    }
+}

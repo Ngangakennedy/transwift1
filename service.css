@@ -1,0 +1,171 @@
+@import url(https://kit.fontawesome.com/863998ce84.js" crossorigin="anonymous");
+*{
+    margin: 0;
+    padding:0;
+    border:none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    background-color: #2e2e2e;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: white;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 113, 186, 255);
+}
+.sidebar:hover {
+    width: 250px;
+    transition: 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: relative;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li :hover,
+.active{
+    background:#e0e0e058;
+}
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.main-section{
+    position: relative;
+    background:  #2e2e2e;
+    width: 100%;
+    padding: 1rem;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 2rem;
+    margin-bottom: 2rem;
+}
+.header-title{
+    text-align: center;
+    color: rgba(113, 99, 186, 255);
+}
+.card-container{
+    background: darkgray;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-container img{
+    margin: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+.main-title{
+    color: rgba(113, 99, 186, 255);
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    font-size: 25px;
+    margin: 10px;
+}
+.business-card{
+    background: rgb(233, 232, 247);
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 290px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.business-card:hover{
+    transform:translate(-5px) ;
+}
+.title{
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 50%;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .sidebar:hover {
+        width: 100%; /* You can adjust this as needed */
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-wrapper {
+        padding: 20px 1rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-container img {
+        width: 100%;
+        margin: 10px 0; /* Adjust margin as needed */
+    }
+
+    .business-card {
+        width: 100%;
+    }
+}
+
