@@ -208,12 +208,12 @@ textarea::-webkit-scrollbar-thumb{
     box-shadow: 0px opx 15px rgba(0, 0, 0, 0.3);
     border: 1px solid dodgerblue;
 }
-@media(max-width: 1100px){
+@media(max-width: 768px){
     .messageform .halfwidth{
         flex-basis: 100%;
     }
 }
-@media(max-width:900px){
+@media(max-width:768px){
     .maiin .row{
         flex-wrap: wrap;
     }
