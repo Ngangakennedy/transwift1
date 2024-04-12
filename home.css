@@ -15,14 +15,23 @@
     color: rgba(113, 99, 186, 255);
     padding-top: 100px;
 }
+.content h2{
+    color: rgba(113, 99, 186, 255);
+    padding-top: 30px;
+}
 .content h1{
     font-size: 70px;
     color: rgba(113, 99, 186, 255);
     line-height: 75%;
 }
-.content p{
+.content ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: disc;
+}
+.content ul li {
     font-size: 16px;
-    margin-top: 10PX;
+    margin-top: 10px;
     line-height: 30px;
     letter-spacing: 1px;
     font-family: 'Times New Roman', Times, serif;
@@ -51,7 +60,11 @@
         line-height: 100%;
     }
 
-    .content p {
+    .content ul {
+        margin-top: 8px;
+    }
+
+    .content ul li {
         font-size: 14px;
         margin-top: 8px;
         line-height: 25px;
