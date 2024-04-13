@@ -96,6 +96,12 @@ section.left .contactinfo{
     color: whitesmoke;
     font-size: 18px;
 }
+.icongroup .details span a{
+    display: block;
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+}
 .icongroup .details span:nth-child(1){
     text-transform: uppercase;
     color: #ccc;
