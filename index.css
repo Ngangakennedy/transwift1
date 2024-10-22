@@ -91,106 +91,64 @@ body{
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
 }
 .topnav a:hover{
     background-color: #ddd;
-    color: green;    
+    color: black;    
 }
-#menu-bar{
+.topnav #menu-bar{
     display: none;
 }
 .topnav label{
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
     display: none;
 }
+.topnav #menu-icon {
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 14px 20px;
+    display: none;
+}
+.main-content {
+    padding: 40px 20px;
+    width: auto;
+    height: auto;
+    margin: 5px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
 .main-content h1 {
-    font-size: 25px;
+    font-size: 36px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .column{
     float: left;
     width: 50%;
     height: auto;
-    margin-top: 20px;
-    margin-left: 5px;  
-    border: 2px solid #ddd;
-    align-items: center;
-    padding-right: 10px;
-    background-color: #2e2e2e;
-}
-.column .icongroup{
-    display: flex;
-    align-items: center;
-    margin: 20px 5px;
-    padding-bottom: 10px;
-}
-.column .icongroup .icon{
-    width: 50px;
-    height: 50px;
-    border: 2px solid dodgerblue;
-    border-radius: 50%;
-    margin-right: 20px;
-    position: relative;
-}
-.icongroup .icon i{
-    font-size: 20px;
-    color: #ddd;
-    position: absolute;
-    top: 50%;  /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to exactly center */
-    margin-top: 15px;
-}
-.icongroup .details span{
     display: block;
-    color: whitesmoke;
-    font-size: 18px;
+    margin: 20px 0;
 }
-.icongroup .details span:nth-child(1){
-    text-transform: uppercase;
-    color: #ccc;
+.statement{
+    float: left;
+    width: 50%;
+    height: auto;
+    display: block;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
-.socialmedia{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 22px 0px 20px 20px;
-}
-.socialmedia a{
-    width: 35px;
-    height: 35px;
-    text-decoration: none;
-    text-align: center;
-    margin-right: 15px;
-    border-radius: 5px;
-    background-color: dodgerblue;
-    transition: 0.4s;
-}
-.socialmedia a i{
-    color: #fff;
-    font-size: 18px;
-    line-height: 35px;
-    border: 1px solid transparent;
-    transition-delay: 0.4s;
-}
-.socialmedia a:hover{
-    transform: translateY(-5px);
-    background-color: #2e2e2e;
-    color: dodgerblue;
-    border: 1px solid dodgerblue;
-}
-.socialmedia a:hover i{
-    color: dodgerblue;
-}
-.column img{
-    background-color: #121111;
-    padding: 5px;
-    height: 60vh;
-    align-items: center;
+.statement h1{
+    margin-top: 5px;
+    font-weight: bolder;
+} 
+.statement a{
+    text-decoration: underline;
+    color: blue;
 }
 .left-column{
     float: right;
@@ -206,91 +164,27 @@ body{
     margin: 10px 5px 20px 0;
     width: 100%;
     height: auto;
-    padding: 2px;
 }
 .left-column span{
     margin-top: 10px;
     font-size: 20px;
 }
-.contactinfo .icongroup{
-    display: flex;
-    align-items: center;
-    margin: 25px 0px;
-}
-.icongroup .icon{
-    width: 45px;
-    height: 45px;
-    border: 2px solid dodgerblue;
-    border-radius: 50%;
-    margin-right: 20px;
-    position: relative;
-}
-.icongroup .icon i{
-    font-size: 20px;
-    color: #ddd;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.icongroup .details span{
-    display: block;
-    color: whitesmoke;
-    font-size: 18px;
-}
-.icongroup .details span a{
-    display: block;
-    color: whitesmoke;
-    font-size: 18px;
-    text-decoration: none;
-}
-.icongroup .details span:nth-child(1){
-    text-transform: uppercase;
-    color: #ccc;
-}
-section.left .socialmedia{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 22px 0px 20px;
-}
-.socialmedia a{
-    width: 35px;
-    height: 35px;
-    text-decoration: none;
-    text-align: center;
-    margin-right: 15px;
-    border-radius: 5px;
-    background-color: dodgerblue;
-    transition: 0.4s;
-}
-.socialmedia a i{
-    color: #fff;
-    font-size: 18px;
-    line-height: 35px;
-    border: 1px solid transparent;
-    transition-delay: 0.4s;
-}
-.socialmedia a:hover{
-    transform: translateY(-5px);
-    background-color: #2e2e2e;
-    color: dodgerblue;
-    border: 1px solid dodgerblue;
-}
-.column .socialmedia a:hover i{
-    color: dodgerblue;
-}
 .footer{
     background-color: grey;
     text-align: center;
     padding: 10px;
-    margin-top: 110vh;
+    margin-top: 120vh;
     height: 50px;
 }
-
+.footer span{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 50;
+    font-size: smaller;
+}
 @media screen and (max-width: 991px) {
 
+    
     * {
         margin: 0;
         padding: 0;
@@ -383,52 +277,41 @@ section.left .socialmedia{
         padding: 20px;
         margin: 10px;
         box-shadow: none;
-        display: block;
     }
 
     .main-content h1 {
         font-size: 28px;
     }
-    
+    .column img{
+        display: none;
+    }
 
     .column, .statement {
         float: none;
         width: 100%;
-        padding: 10px;
     }
 
     
     .left-column {
-        display: none;
         float: none;
         width: 100%;
-        margin-right:20px 0;
+        margin-right: 0;
         height: auto;
+        order: 2;
     }
 
     .left-column img {
         width: 100%;
         height: auto;
     }
-    .icongroup .icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .icongroup .icon i {
-        font-size: 16px;
-    }
-
-    .socialmedia a {
-        width: 30px;
-        height: 30px;
+    .left-column a{
+        display: none;
     }
 
     .footer {
         margin-top: 20px;
         height: auto;
         padding: 20px;
-        width: 100%;
     }
     .footer span{
         color: white;
