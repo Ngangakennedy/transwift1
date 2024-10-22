@@ -1,74 +1,216 @@
-.maiin{
-    width: 100%;
-    min-height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+body{
+    margin: 0;
+}
+.header{
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+    position: relative;
+    top: 10px; left: 5px;right: 5px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 5%;
     display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000;
+    height: 200px;
+    border: 5px solid rgb(227, 234, 235);
+    border-radius: 5px;
+    padding: 20px;
+}
+.header .logo{
+    display: flex ;
+    align-items: center;
+}
+.header .logo img{
+    width: 180px;
+    height: auto;
+}
+.header .gmail-container {
+    display: flex;
+    gap: 50px; /* Space between email and call us sections */
     justify-content: center;
     align-items: center;
-    padding: 30px 8%;
-    background-color: #2e2e2e;
-    color: white;
+    margin-right: 200px;
 }
-.row{
+.header .gmail {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1100px;
+    text-align: center;
 }
-.row section col{
-    display: flex;
-    flex-direction: column;
-}
-.row section.left{
-    flex-basis: 35%;
-    min-width: 330px;
-    margin-right: 60px;
-}
-.row section.right{
-    flex-basis: 60%;
-}
-section.left .contacttitle h2{
+.header .gmail .icon {
+    font-size: 36px;
+    width: 50px;
+    height: 50px;
+    color: #333;
+    margin-right: 10px;
     position: relative;
-    font-size: 24px;
-    color: #ddd;
-    display: inline-block;
-    margin-bottom: 0.5px;
 }
-section.left .contacttitle span{
+.icon i{
+    font-size: 30px;
+    color: #333;
+    padding-bottom: 40px;
+    left: 10px;
     position: relative;
-    font-size: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    color: #ddd;
-    display: inline-block;
-    margin-bottom: 15px;
 }
-section.left .contacttitle h2::before {
-    content: '';
-    position: absolute;
+.details span{
+    padding-left: 15px;
+    display: block;
+    color: #333;
+    font-size: 20px;
+}
+.details span a{
+    display: block;
+    margin-top: 5px;
+    color: #333;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.details span a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.topnav{
+    padding-top: 5px;
+    margin: 5px;
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+}
+.topnav a:hover{
+    background-color: #ddd;
+    color: green;    
+}
+#menu-bar{
+    display: none;
+}
+.topnav label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+.main-content h1 {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.column{
+    float: left;
     width: 50%;
-    height: 1px;
-    background-color: #888;
-    top: 120%;
-    left: 0;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 5px;  
+    border: 2px solid #ddd;
+    align-items: center;
+    padding-right: 10px;
+    background-color: #2e2e2e;
 }
-section.left .contacttitle h2::after{
-    content: '';
+.column .icongroup{
+    display: flex;
+    align-items: center;
+    margin: 20px 5px;
+    padding-bottom: 10px;
+}
+.column .icongroup .icon{
+    width: 50px;
+    height: 50px;
+    border: 2px solid dodgerblue;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+.icongroup .icon i{
+    font-size: 20px;
+    color: #ddd;
     position: absolute;
-    width: 25%;
-    height: 3px;
-    background-color: dodgerblue;
-    top: calc(120%-1px);
-    left: 0;
+    top: 50%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to exactly center */
+    margin-top: 15px;
 }
-section.left .contacttitle p{
-    font-size: 17px;
+.icongroup .details span{
+    display: block;
+    color: whitesmoke;
+    font-size: 18px;
+}
+.icongroup .details span:nth-child(1){
+    text-transform: uppercase;
     color: #ccc;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    padding-bottom: 20px;
 }
-section.left .contactinfo{
-    margin-bottom: 16px;
+.socialmedia{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 22px 0px 20px 20px;
+}
+.socialmedia a{
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    transition: 0.4s;
+}
+.socialmedia a i{
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    border: 1px solid transparent;
+    transition-delay: 0.4s;
+}
+.socialmedia a:hover{
+    transform: translateY(-5px);
+    background-color: #2e2e2e;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+.socialmedia a:hover i{
+    color: dodgerblue;
+}
+.column img{
+    background-color: #121111;
+    padding: 5px;
+    height: 60vh;
+    align-items: center;
+}
+.left-column{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 36%;
+    height: 100vh;
+    border-width:medium ;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+}
+.left-column img{
+    margin: 10px 5px 20px 0;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+.left-column span{
+    margin-top: 10px;
+    font-size: 20px;
 }
 .contactinfo .icongroup{
     display: flex;
@@ -136,95 +278,162 @@ section.left .socialmedia{
     color: dodgerblue;
     border: 1px solid dodgerblue;
 }
-.socialmedia a:hover i{
+.column .socialmedia a:hover i{
     color: dodgerblue;
 }
-.row section.right .messageform{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 30px;
+.footer{
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+    margin-top: 110vh;
+    height: 40px;
 }
-.row section.right .intogroup{
-    margin: 18px 0px;
-    position: relative;
-}
-.messageform .halfwidth{
-    flex-basis: 48%;
-}
-.messageform .fullwidth{
-    flex-basis: 100%;
-}
-.messageform input, .messageform textarea{
-    width: 100%;
-    font-size: 18px;
-    padding: 2px 0px;
-    background-color: #2e2e2e;
-    color: #ddd;
-    border: none;
-    border-bottom: 2px solid #666;
-    outline: none;
-}
-.messageform textarea{
-    resize: none;
-    height: 220px;
-    display: block;
-}
-textarea::-webkit-scrollbar-track{
-    background-color: #1e1e1e;
-    border-radius: 15px;
-}
-textarea::-webkit-scrollbar-thumb{
-    background-color: dodgerblue;
-    border-radius: 15px;
-}
-.intogroup label{
-    position: absolute;
-    left: 0;
-    bottom: 4px;
-    color: #ddd;
-    font-size: 18px;
-    transition: 0.4s;
-    pointer-events: none;
-}
-.intogroup:nth-child(4) label{
-    top: 2px;
-}
-.intogroup input:focus ~ label,.intogroup textarea:focus ~ label,
-.intogroup input:valid ~ label,.intogroup textarea:valid ~ label
-{
-    transform: translateY(-30px);
-    font-size: 16px;
-}
-.intogroup button{
-    padding: 8px 16px;
-    font-size: 18px;
-    background-color: dodgerblue;
-    color: #ddd;
-    border: 1px solid transparent;
-    border-radius: 25px;
-    outline: none;
-    cursor: pointer;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    transition: 0.4s;
-}
-.intogroup button:hover{
-    background-color: #2e2e2e;
-    color: dodgerblue;
-    box-shadow: 0px opx 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid dodgerblue;
-}
-@media(max-width: 768px){
-    .messageform .halfwidth{
-        flex-basis: 100%;
+
+@media screen and (max-width: 991px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        text-transform: capitalize;
     }
-}
-@media(max-width:768px){
-    .maiin .row{
-        flex-wrap: wrap;
+
+    body {
+        margin: 0;
     }
-    .row section.left, .row section.right{
-        flex-basis: 100%;
-        margin: 0px;
+
+    
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+        margin-top: 5px;
+        padding: 5%;
+    }
+
+    .header .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .header .gmail-container {
+        flex-direction: row;
+        margin-right: 0;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .header .gmail .icon {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .details span {
+        padding-left: 0;
+        font-size: 16px;
+    }
+
+    .details span a {
+        font-size: 24px;
+    }
+
+    
+    .topnav {
+        position: relative;
+    }
+    .topnav label{
+        display: initial;
+        height: 20px;
+        padding: 10px 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .topnav a {
+        float: none;
+        display: none;
+        text-align: left;
+        width: 100%;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    
+    #menu-icon {
+        color: #fff;
+        height: 20px;
+        display: block;
+        float: left;
+        padding: 20px 20px;
+    }
+
+    #menu-bar:checked ~ .menu-links a {
+        display: block;
+    }
+
+    
+    .main-content {
+        padding: 20px;
+        margin: 10px;
+        box-shadow: none;
+        display: block;
+    }
+
+    .main-content h1 {
+        font-size: 28px;
+    }
+    
+
+    .column, .statement {
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    
+    .left-column {
+        display: none;
+        float: none;
+        width: 100%;
+        margin-right:20px 0;
+        height: auto;
+    }
+
+    .left-column img {
+        width: 100%;
+        height: auto;
+    }
+    .icongroup .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icongroup .icon i {
+        font-size: 16px;
+    }
+
+    .socialmedia a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer {
+        margin-top: 20px;
+        height: auto;
+        padding: 20px;
+        width: 100%;
+    }
+    .footer span{
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 50;
+        font-size: smaller;
     }
 }
